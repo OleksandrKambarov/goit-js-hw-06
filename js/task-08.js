@@ -9,7 +9,7 @@ function submitForm(event) {
   const password = event.currentTarget.elements.password;
 
   if (email.value === "" || password.value === "") {
-    alert("Please fill in all the fields!");
+    return alert("Please fill in all the fields!");
   } else {
     profile.email = email.value;
     profile.password = password.value;
