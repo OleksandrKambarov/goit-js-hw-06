@@ -1,8 +1,8 @@
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
-const textColor = document.querySelector('.color');
-const changeFonColorBtn = document.querySelector('.change-color');
+const textColor = document.querySelector(".color");
+const changeFonColorBtn = document.querySelector(".change-color");
 const body = document.body;
 
 const changeFonColor = () => {
@@ -10,4 +10,4 @@ const changeFonColor = () => {
   textColor.textContent = getRandomHexColor();
 };
 
-changeFonColorBtn.addEventListener('click', changeFonColor);
+changeFonColorBtn.addEventListener("click", changeFonColor);
