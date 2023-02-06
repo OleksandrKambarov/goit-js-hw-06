@@ -7,7 +7,7 @@ const body = document.body;
 
 const changeFonColor = () => {
   document.body.style.backgroundColor = getRandomHexColor();
-  textColor.textContent = document.body.style.getRandomHexColor();
+  textColor.textContent = document.body.style.backgroundColor;
 };
 
 changeFonColorBtn.addEventListener("click", changeFonColor);
